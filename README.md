@@ -11,16 +11,15 @@ Usage:
 
 <script src="https://raw.github.com/Jalalhejazi/msgNotify/master/msgNotify.js"></script>
 
- <script>
-                msgNotify.info    ('Display info message, with no title' );
+   msgNotify.info    ('Display info message, with no title' );
 
-                msgNotify.warning ('Display warning message, with no title');
+   msgNotify.warning ('Display warning message, with no title');
 
-                msgNotify.success ('Display a success message' , 'with a title')
+   msgNotify.success ('Display a success message' , 'with a title')
 
-                msgNotify.error   ('with a title', 'with a title');
+   msgNotify.error   ('with a title', 'with a title');
 
-                msgNotify.clear() ; 
- </script>      
+   msgNotify.clear() ; 
+
 
 
