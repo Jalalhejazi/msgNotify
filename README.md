@@ -26,3 +26,8 @@ Usage:
 	msgNotify.clear() ; 
 
 
+Play:
+=========
+
+	http://jsfiddle.net/jalalhejazi/b7Ep8/
+
