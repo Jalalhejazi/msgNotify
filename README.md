@@ -11,7 +11,7 @@ Usage:
 
    load the library: https://raw.github.com/Jalalhejazi/msgNotify/master/msgNotify.js 
 
-    
+
  	msgNotify.options.timeOut = 0;
 
 
@@ -32,6 +32,6 @@ Usage:
 Play:
 =========
 
-	Try jsFiddle:  http://jsfiddle.net/jalalhejazi/b7Ep8
+	Try jsFiddle: http://jsfiddle.net/jalalhejazi/b7Ep8
 
 
