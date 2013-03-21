@@ -29,5 +29,6 @@ Usage:
 Play:
 =========
 
-	http://jsfiddle.net/jalalhejazi/b7Ep8/
+	Try jsFiddle:  http://jsfiddle.net/jalalhejazi/b7Ep8
+
 
