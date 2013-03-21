@@ -9,17 +9,20 @@ I use it to add message notification to my WebApps status on progress and
 Usage:  
 =========
 
-<script src="https://raw.github.com/Jalalhejazi/msgNotify/master/msgNotify.js"></script>
+   load the library: https://raw.github.com/Jalalhejazi/msgNotify/master/msgNotify.js 
 
-   msgNotify.info    ('Display info message, with no title' );
+ 
+	msgNotify.info    ('Display info message with no title' );
 
-   msgNotify.warning ('Display warning message, with no title');
+	msgNotify.warning ('Display warning message with no title');
 
-   msgNotify.success ('Display a success message' , 'with a title')
+	msgNotify.success ('Display success message' , 'with a title')
 
-   msgNotify.error   ('with a title', 'with a title');
+	msgNotify.error   ('Display error message', 'with a title');
 
-   msgNotify.clear() ; 
+	msgNotify.bookmark('Bookmark your WebApp and restart from home screen');
+	msgNotify.bookmark();
 
+	msgNotify.clear() ; 
 
 
