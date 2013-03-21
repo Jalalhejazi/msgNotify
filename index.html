@@ -17,7 +17,7 @@
 	<body style="padding: 30px" class="container">
 		<section class="row">
 			<h1>msgNotify</h1>	
-			<a href="msgNotify">GitHub</a> 
+			<a href="https://github.com/Jalalhejazi/msgNotify">//github.com/Jalalhejazi/msgNotify</a> 
 
 			<div class="well row">
 				<div class="row span11">
@@ -36,10 +36,30 @@
 						<div class="control-group" id="msgNotifyTypeGroup">
 							<div class="controls">
 								<label >msgNotify Type</label>
-								<label class="radio"><input type="radio" name="msgNotifys" value="success" checked/>Success</label>
-								<label class="radio"><input type="radio" name="msgNotifys" value="info"/>Info</label>
-								<label class="radio"><input type="radio" name="msgNotifys" value="warning"/>Warning</label>
-								<label class="radio"><input type="radio" name="msgNotifys" value="error"/>Error</label>
+								
+								<label class="radio">
+									<input type="radio" name="msgNotifys" value="success" checked/>Success
+								</label>
+								
+								<label class="radio">
+									<input type="radio" name="msgNotifys" value="info"/>
+									Info
+								</label>
+								
+								<label class="radio">
+									<input type="radio" name="msgNotifys" value="warning"/>
+									Warning
+								</label>
+								
+								<label class="radio">
+									<input type="radio" name="msgNotifys" value="error"/>
+									Error
+								</label>
+
+								<label class="radio">
+									<input type="radio" name="msgNotifys" value="bookmark"/>
+									bookmark
+								</label>
 							</div>
 						</div>
 						<div class="control-group" id="positionGroup">
@@ -190,5 +210,20 @@
 		        });
 		    })
 		</script>
+
+		
+		<script type="text/javascript">
+			  // to use the library, just call the global msgNotify:	
+
+			  msgNotify.success(' https://github.com/Jalalhejazi/msgNotify ', 'download sourceCode');
+			
+			  var Add_to_homescreen_msg = '<p>Bookmark your WebApp and restart from home screen </p> <img src="images/touch-icon-iphone.png" />' ;
+			  
+			  msgNotify.bookmark(Add_to_homescreen_msg);	
+		
+		</script>
+		
+	
+
 	</body>
 </html>

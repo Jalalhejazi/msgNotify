@@ -1,5 +1,21 @@
 ﻿/*
-        jQuery plugin
+        GitHub:         https://raw.github.com/Jalalhejazi/msgNotify/master/msgNotify.js
+        jQuery plugin:  msgNotify.js
+        
+        Usage:  
+                msgNotify.info    ('Display info message with no title' );
+
+                msgNotify.warning ('Display warning message with no title');
+
+                msgNotify.success ('Display success message' , 'with a title')
+
+                msgNotify.error   ('Display error message', 'with a title');
+
+                msgNotify.bookmark('Bookmark your WebApp and restart from home screen');
+                msgNotify.bookmark();
+            
+                msgNotify.clear() ; 
+
  */
 
 ; (function (define) {
@@ -19,7 +35,8 @@
                         error: 'msgNotify-error',
                         info: 'msgNotify-info',
                         success: 'msgNotify-success',
-                        warning: 'msgNotify-warning'
+                        warning: 'msgNotify-warning',
+                        bookmark: 'msgNotify-bookmark'
                     },
                     iconClass: 'msgNotify-info',
                     positionClass: 'msgNotify-top-right',
@@ -142,6 +159,15 @@
                     });
                 },
 
+                 bookmark = function (message, title, optionsOverride) {
+                    return notify({
+                        iconClass: getOptions().iconClasses.info,
+                        message: (message  ? message  : "Bookmark your WebApp and restart from home screen")  ,
+                        optionsOverride: optionsOverride,
+                        title:  (title ? title : "Add to home screen")
+                    });
+                },
+
                 clear = function ($msgNotifyElement) {
                     var options = getOptions();
                     if (!$container) { getContainer(options) };
@@ -159,14 +185,15 @@
                 };
 
             var msgNotify = {
-                clear: clear,
-                error: error,
-                getContainer: getContainer,
-                info: info,
-                options: {},
-                success: success,
-                version: '1.2.2',
-                warning: warning
+                getContainer:   getContainer,
+                clear:          clear,
+                info:           info,
+                options:        {},
+                error:          error,
+                success:        success,
+                warning:        warning, 
+                bookmark:       bookmark,
+                version:        '1.2.3'
             };
 
             return msgNotify;
