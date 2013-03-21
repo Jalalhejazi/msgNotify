@@ -11,7 +11,10 @@ Usage:
 
    load the library: https://raw.github.com/Jalalhejazi/msgNotify/master/msgNotify.js 
 
- 
+    
+ 	msgNotify.options.timeOut = 0;
+
+
 	msgNotify.info    ('Display info message with no title' );
 
 	msgNotify.warning ('Display warning message with no title');
