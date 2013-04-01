@@ -170,7 +170,10 @@
 
                 clear = function ($msgNotifyElement) {
                     var options = getOptions();
-                    if (!$container) { getContainer(options) };
+                    if (!$container) 
+                        { 
+                            getContainer(options) 
+                        }
                     if ($msgNotifyElement && $(':focus', $msgNotifyElement).length === 0) {
                         $msgNotifyElement.fadeOut(options.fadeOut, function () {
                             removemsgNotify($msgNotifyElement);
@@ -212,11 +215,11 @@
                 container.appendTo($(options.target));
                 $container = container;
                 return container;
-            };
+            }
 
             function getOptions() {
                 return $.extend({}, defaults, msgNotify.options);
-            };
+            }
 
             function removemsgNotify($msgNotifyElement) {
                 if (!$container) { $container = getContainer(); }
